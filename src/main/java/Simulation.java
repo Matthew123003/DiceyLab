@@ -24,4 +24,11 @@ public class Simulation {
     }
 
 
+    public void runSimulation() {
+
+    }
+
+    public void printResults() {
+
+    }
 }
