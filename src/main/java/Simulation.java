@@ -1,10 +1,14 @@
 public class Simulation {
-        private int numberOfDies;
-        private int numberOfTosses;
+    private int numberOfDies;
+    private int numberOfTosses;
 
-    public Simulation(int numberOfDies, int numberOfTosses){
+    Dice dice;
+    Bins bins;
+
+    public Simulation(int numberOfDies, int numberOfTosses) {
         this.numberOfDies = numberOfDies;
         this.numberOfTosses = numberOfTosses;
+        dice = new Dice(numberOfDies);
     }
 
     public int getNumberOfDies() {
@@ -25,10 +29,13 @@ public class Simulation {
 
 
     public void runSimulation() {
-
+        for (int i = 0; i < numberOfTosses; i++) {
+            dice.roll();
+        }
     }
 
-    public void printResults() {
+        public void printResults () {
 
+        }
     }
-}
+
